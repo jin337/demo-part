@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Home() {
   return (
-    <main>
-      111
-    </main>
-  )
+    <main className='text-base'>111</main>
+  );
 }
 
-export default Home
+export default Home;
