@@ -1,11 +1,11 @@
 'use client'
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '@/hooks/redux'
 import { setCount } from '@/store/reducers/common';
 
 function Index() {
-  const dispatch = useDispatch();
-  const common = useSelector((state: any) => state.common);
+  const dispatch = useAppDispatch();
+  const common = useAppSelector((state) => state.common);
 
   return (
     <div>
