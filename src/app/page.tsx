@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { useAppDispatch, useAppSelector } from '@/hooks/redux'
 import { setCount } from '@/store/reducers/common';
