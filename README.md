@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 代码提交
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git add .
+git cz // 需要提前全局安装commitizen
+git push origin 分支名
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 安装 commitizen
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm i -g commitizen
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## git cz
 
-## Learn More
+- feat: 新增功能
+- fix: Bug 修复
+- build: 项目打包
+- docs: 文档相关内容改动, 如添加注释
+- revert: 执行 git revert 之后的 revert 信息
+- style: 不会影响系统功能的代码格式相关改动, 如样式等
+- chore: 构建工具或项目依赖的改动, 如 webpack/vite 配置
 
-To learn more about Next.js, take a look at the following resources:
+## .husky
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**.husky 文件夹为代码校验，代码提交验证文件夹，无特殊情况，勿动**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## .eslintrc.json
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**.eslintrc.json 为校验规则，无特殊情况，勿动**
