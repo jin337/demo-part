@@ -33,7 +33,7 @@
     "typescript": "^5.3.3"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "npm run lint:js"
+    "*.{js,jsx,ts,tsx}": "npm run lint:js"
   },
   "config": {
     "commitizen": {
