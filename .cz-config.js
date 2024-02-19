@@ -1,10 +1,12 @@
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
-    "type-empty": [2, "never"],
-    "type-case": [2, "always", "lower-case"],
-    "subject-empty": [2, "never"],
-    "subject-case": [2, "never", []]
+    'type-empty': [2, 'never'],
+    'type-case': [0, 'always', 'lower-case'],
+    'scope-empty': [0],
+    'scope-case': [0],
+    'subject-case': [0],
+    'body-leading-blank': [0]
   },
   messages: {
     type: "请选择提交的类型",
