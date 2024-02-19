@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
@@ -35,12 +35,9 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": ".commitlintrc.js"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}":  "eslint --cache --fix"
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix"
   }
 }
