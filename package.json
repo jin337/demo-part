@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:js": "eslint --cache --fix .js,.jsx,.ts,.tsx src"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
@@ -32,7 +33,7 @@
     "typescript": "^5.3.3"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+    "src/**/*.{js,jsx,ts,tsx}": "npm run lint:js"
   },
   "config": {
     "commitizen": {
