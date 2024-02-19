@@ -9,7 +9,7 @@ function Index() {
 
   return (
     <div>
-      {common.count}
+      {common.count}>asdas
       <button onClick={() => dispatch(setCount({ type: "add", count: common.count + 1 }))}>Dispatch Action</button>
     </div>
   );
