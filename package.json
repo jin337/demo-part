@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "lint:ts": "eslint --ext .js,.jsx,.ts,.tsx src"
+    "lint:ts": "eslint --cache --fix .js,.jsx,.ts,.tsx src"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
